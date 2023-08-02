@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import ConstraintedBox from "@/components/common/ConstraintedBox";
@@ -7,27 +9,41 @@ import Column from "@/components/common/Column";
 import CircleBox from "@/components/common/CircleBox";
 import Row from "@/components/common/Row";
 import socialLinks from "@/data/socialLinks";
+import { useState } from "react";
+
+
+
+
+
 
 const HomeSection1 = () => {
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
+
   return (
     <ResponsiveBox classNames="bg-[var(--dialogColor)]">
       <ConstraintedBox classNames="p-4 pb-16 pt-8 sm:pt-16">
         <WrappedBox classes="justify-items-stretch">
           <Column classes="justify-center">
             <p className="max-w-sm">
-              Hi 👋,{" "}
-              <span className="text-[var(--primaryColor)]">I&apos;m</span>
+              Welcome To 
+              <span className="text-[var(--primaryColor)] ml-1">GPOS</span>
             </p>
 
-            <h1 className="text-[var(--primaryColor)]">Nikhil Rajput</h1>
+            <h1 className="text-[var(--primaryColor)]">GPOS</h1>
 
             <p className="font-semibold max-w-sm">
-              Software Enginner & Fullstack Developer
+              Thailand's No.1 POS System 
             </p>
 
-            <p className="mt-8 max-w-sm">
-              An inquisitive software developer specialized in both front-end
-              and back-end development across platforms.
+            <p className="flex justify-center mt-8 ">
+            Empowering Business Success with GPOS - Your Ultimate Point of Sale .
+Tailored Bringing Solutions for Thailand's Industries to Unleash Your Business Potential.
             </p>
 
             <button
@@ -35,11 +51,11 @@ const HomeSection1 = () => {
               type="button"
               className="app__filled_btn mt-10"
             >
-              Let&apos;s Talk
+              Lets Use
             </button>
 
             <Column classes="mt-8">
-              <p>Follow me here</p>
+              <p>Contact Us</p>
               <Row classes="mt-2">
                 {socialLinks.map((link, index) => {
                   return (
@@ -57,22 +73,23 @@ const HomeSection1 = () => {
             </Column>
           </Column>
 
-          <CircleBox classes="w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] pointer-events-none justify-self-center sm:justify-self-end">
+          <CircleBox classes={`w-[25rem] h-[25rem] lg:w-[25rem] lg:h-[25rem] pointer-events-none justify-self-center sm:justify-self-end ${imageLoaded ? "fade-in loaded" : "fade-in"}`}>
             <Image
-              src="/images/profile.webp"
+              src="/test1.gif"
               alt="profile"
-              width={400}
-              height={400}
+              width={500}
+              height={500}
               sizes="100%"
               priority
               placeholder="blur"
               blurDataURL="/images/profile.webp"
               style={{
                 objectFit: "cover",
-                width: "100%",
-                height: "100%",
+                width: "115%",
+                height: "115%",
                 aspectRatio: "1 / 1",
               }}
+              onLoad={handleImageLoad}
             />
           </CircleBox>
         </WrappedBox>

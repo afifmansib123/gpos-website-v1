@@ -78,17 +78,17 @@ const NavBar = () => {
 
   return (
     <nav
-      className="fixed w-screen h-auto z-[1000] top-0 bg-[var(--dialogColor)]"
-      ref={navRef}
+      className="fixed w-screen h-auto z-[1000] top-0"
+      ref={navRef} style={{backgroundColor:"#262627"}}
     >
-      <div className="h-full flex mx-auto px-4 py-6 constrained-width">
+      <div className="h-full flex mx-auto px-1 py-6 constrained-width">
         <div className="w-full flex justify-between items-center">
           <Link
             href="/"
             className="w-fit h-fit text-2xl lg:text-3xl font-bold text-white flex flex-row items-center"
           >
             <Image
-              src="/icon.png"
+              src="/logo.png"
               alt="profile"
               width={80}
               height={80}
@@ -98,10 +98,10 @@ const NavBar = () => {
               blurDataURL="/icon.png"
               className="w-8 lg:w-10 h-auto mr-1"
             />
-            Portfolio
+            GPOS
           </Link>
 
-          <div className="w-full hidden lg:flex items-center justify-end flex-1 list-none">
+          <div className="w-full hidden lg:flex justify-center mr-9 flex-1 list-none" style={{color:"white"}}>
             {navMenus.map((menu, index) => {
               const depthLevel = 0;
               return (

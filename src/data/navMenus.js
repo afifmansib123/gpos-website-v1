@@ -1,24 +1,24 @@
 const navMenus = [
     {
-        title: "About",
+        title: "ผลิตภัณฑ์",
         path: "/#about",
     },
     {
-        title: "Services",
+        title: "ฟีเจอร์",
         path: "/#services",
     },
     {
-        title: "Experiences",
+        title: "คู่มือ",
         path: "/#experiences",
     },
     {
-        title: "Projects",
+        title: "เกี่ยวกับเรา",
         path: "/#projects",
     },
     {
-        title: "Contact",
+        title: "ติดต่อเรา",
         path: "/#contact",
-    },
+    }
 ];
 
 export default navMenus;

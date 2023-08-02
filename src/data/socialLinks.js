@@ -1,25 +1,27 @@
-import { FaInstagram, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaTwitter, FaGithub, FaLinkedin, FaFacebook, FaLine, FaFacebookMessenger } from "react-icons/fa";
 
 const socialLinks = [
-  {
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/nixrajput",
-    icon: <FaLinkedin />,
-  },
-  {
-    name: "GitHub",
-    url: "https://www.github.com/nixrajput",
-    icon: <FaGithub />,
-  },
+
   {
     name: "Instagram",
-    url: "https://www.instagram.com/nixrajput",
+    url: "#",
     icon: <FaInstagram />,
   },
+
   {
-    name: "Twitter",
-    url: "https://www.twitter.com/nixrajput07",
-    icon: <FaTwitter />,
+    name: "Facebook",
+    url: "#",
+    icon: <FaFacebook />,
+  },
+  {
+    name: "Line",
+    url: "#",
+    icon: <FaLine />,
+  },
+  {
+    name: "YouTube",
+    url: "#",
+    icon: <FaYoutube />,
   },
 ];
 

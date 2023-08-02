@@ -1,72 +1,92 @@
-import Image from "next/image";
 import ConstraintedBox from "@/components/common/ConstraintedBox";
 import ResponsiveBox from "@/components/common/ResponsiveBox";
-import WrappedBox from "@/components/common/WrappedBox";
-import Column from "@/components/common/Column";
+import Carousel from "@/components/common/carousel/Carousel";
+import ProjectItem from "@/components/common/ProjectItem";
 
-const services = [
+
+const projects = [
   {
-    title: "Mobile App Development",
-    image: "/icons/mobile-dev.webp",
+    title: "ระบบออกแบบเมนู",
     description:
-      "I specialize in creating captivating mobile applications that engage your audience. From concept to deployment, I develop native and cross-platform apps for iOS and Android. With cutting-edge technologies, I ensure seamless performance, intuitive interfaces, and robust functionality that aligns perfectly with your business goals.",
+      "สร้างและแก้ไขเมนูด้วยรูปภาพ โดยขั้นตอนไม่ยุ่งยาก ช่วยให้การขายเป็นเรื่องง่าย",
+    icon: "/slide2.png",
+    sceenshots: [],
+    githubUrl: "https://github.com/nixrajput/social-media-app-flutter",
+    url: "https://www.nixlab.co.in/projects/com.nixlab.rippl",
+    repoType: "public",
+    tags: ["Flutter", "Dart", "GetX", "Hive"],
   },
   {
-    title: "Web Development",
-    image: "/icons/web-dev.webp",
+    title: "E-commerce App",
     description:
-      "I deliver visually stunning and user-friendly websites to help you establish a strong online presence. Whether it's a simple informational site or a complex e-commerce platform, I provide tailored web development solutions. Using the latest frameworks and technologies, I create responsive, SEO-friendly websites that offer a seamless browsing experience on all devices.",
+      "An e-commerce web application developed using React.js, Material UI, Redux, and Stripe.",
+    icon: "/logo/reactjs.webp",
+    sceenshots: [],
+    githubUrl: "https://github.com/nixrajput/ecommerce-web-reactjs",
+    url: "https://nixlab-shop.cyclic.app",
+    repoType: "public",
+    tags: ["React.js", "Redux", "Material UI", "Stripe"],
   },
   {
-    title: "Backend Development",
-    image: "/icons/backend-dev.webp",
+    title: "Video Calling App",
     description:
-      "I enhance your digital applications with a robust and scalable backend infrastructure. With expertise in backend development, I create efficient database structures, develop APIs, and configure servers to ensure optimal performance, security, and scalability. My solutions empower your applications to seamlessly handle high traffic and complex data management.",
+      "A video calling mobile application developed using Flutter and Agora SDK that allows users to call each other face to face.",
+    icon: "/logo/flutter.webp",
+    sceenshots: [],
+    githubUrl: "https://github.com/nixrajput/video-calling-app-flutter",
+    url: "https://www.nixlab.co.in/projects/livebox-app",
+    repoType: "public",
+    tags: ["Flutter", "Dart", "GetX", "Agora SDK"],
+  },
+  {
+    title: "Social Media API",
+    description:
+      "An RESTful API developed using Node.js, Express.js and MongoDB to integrate backend and frontend with ease.",
+    icon: "/logo/nodejs.webp",
+    sceenshots: [],
+    githubUrl: "https://github.com/nixrajput/social-media-api-nodejs",
+    repoType: "private",
+    tags: ["Node.js", "Express.js", "MongoDB", "WebSocket"],
+  },
+  {
+    title: "Grocery List Maker App",
+    description:
+      "A grocery list maker mobile application developed using Flutter, BloC, Hive DB and PDF.",
+    icon: "/logo/flutter.webp",
+    sceenshots: [],
+    githubUrl: "https://github.com/nixrajput/grocery-list-maker-flutter",
+    url: "https://github.com/nixrajput/grocery-list-maker-flutter/releases/latest",
+    repoType: "public",
+    tags: ["Flutter", "Dart", "BLoC", "PDF", "Hive"],
+  },
+  {
+    title: "E-commerce API",
+    description:
+      "An RESTful API developed using Node.js, Express.js, MongoDB, and Stripe to integrate e-commerce backend.",
+    icon: "/logo/nodejs.webp",
+    sceenshots: [],
+    githubUrl: "https://github.com/nixrajput/ecommerce-api-nodejs",
+    repoType: "public",
+    tags: ["Node.js", "Express.js", "MongoDB", "Stripe"],
   },
 ];
 
-const HomeSection2 = () => {
+const HomeSection4 = () => {
   return (
     <ResponsiveBox classNames="bg-[var(--bgColor)]">
-      <ConstraintedBox classNames="p-4 py-16">
+      <ConstraintedBox classNames="p-4 py-20">
         <h2 className="text-center mx-auto">
-          What <span className="text-[var(--primaryColor)]">I Do</span>
+          Recent <span className="text-[var(--primaryColor)]">Projects</span>
         </h2>
 
-        <WrappedBox classes="justify-items-center sm:grid-cols-3 mt-12">
-          {services.map((service, index) => {
-            return (
-              <Column
-                key={`service-${index}`}
-                classes="bg-[var(--dialogColor)] p-4 rounded-lg items-center text-center"
-              >
-                <Image
-                  src={service.image}
-                  alt={`service-${index}`}
-                  width={100}
-                  height={100}
-                  sizes="100%"
-                  priority
-                  placeholder="blur"
-                  blurDataURL={service.image}
-                  style={{
-                    objectFit: "cover",
-                    width: "5rem",
-                    height: "5rem",
-                    aspectRatio: "1 / 1",
-                  }}
-                />
-
-                <h5 className="font-bold mt-4">{service.title}</h5>
-
-                <p className="mt-8">{service.description}</p>
-              </Column>
-            );
+        <Carousel classes="mt-12 w-full">
+          {projects.map((project, index) => {
+            return <ProjectItem key={`service-${index}`} project={project} />;
           })}
-        </WrappedBox>
+        </Carousel>
       </ConstraintedBox>
     </ResponsiveBox>
   );
 };
 
-export default HomeSection2;
+export default HomeSection4;

@@ -3,6 +3,7 @@ import ConstraintedBox from "@/components/common/ConstraintedBox";
 import WrappedBox from "@/components/common/WrappedBox";
 import Column from "@/components/common/Column";
 
+
 const HomeSection5 = () => {
   return (
     <ResponsiveBox classNames="bg-[var(--dialogColor)]">

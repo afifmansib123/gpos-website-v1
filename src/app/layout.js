@@ -2,8 +2,8 @@ import "./globals.scss";
 import NavBar from "@/components/navbar/NavBar";
 
 export const metadata = {
-  title: "Nikhil Rajput - Portfolio",
-  description: "Nikhil Rajput's Portfolio",
+  title: "GPOS",
+  description: "A Smart POS System",
 };
 
 export default function RootLayout({ children }) {

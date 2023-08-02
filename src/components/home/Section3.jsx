@@ -4,11 +4,12 @@ import ResponsiveBox from "@/components/common/ResponsiveBox";
 import WrappedBox from "@/components/common/WrappedBox";
 import Column from "@/components/common/Column";
 
+
 const skills = [
   {
     title: "Flutter",
     level: "Expert",
-    icon: "/logo/flutter.webp",
+    icon: "/logo.png",
   },
   {
     title: "React.js",
@@ -52,7 +53,7 @@ const HomeSection3 = () => {
     <ResponsiveBox classNames="bg-[var(--dialogColor)]">
       <ConstraintedBox classNames="p-4 py-12">
         <h2 className="text-center mx-auto">
-          Skills <span className="text-[var(--primaryColor)]">I Know</span>
+          Key Features of<span className="text-[var(--primaryColor)] ml-2">GPOS</span>
         </h2>
 
         <WrappedBox classes="justify-items-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mt-12">
