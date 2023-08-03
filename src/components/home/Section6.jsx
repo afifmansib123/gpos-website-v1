@@ -38,11 +38,11 @@ const HomeSection6 = () => {
             <h1 className="text-[var(--primaryColor)]">GPOS</h1>
 
             <p className="font-semibold max-w-sm">
-              Thailand's No.1 POS System 
+              Thailands No1 POS System 
             </p>
 
             <p className="flex justify-center mt-8 ">
-            Driving Business Triumph, Unleashing Possibilities - GPOS, Your All Inclusive Point of Sale Partner for Thailand's Diverse Industries.
+            Driving Business Triumph Unleashing Possibilities GPOS, Your All Inclusive Point of Sale Partner for Thailands Diverse Industries.
             </p>
 
             <button
