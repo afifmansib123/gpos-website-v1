@@ -10,6 +10,7 @@ import CircleBox from "@/components/common/CircleBox";
 import Row from "@/components/common/Row";
 import socialLinks from "@/data/socialLinks";
 import { useState } from "react";
+import styled from "styled-components";
 
 
 
@@ -17,6 +18,21 @@ import { useState } from "react";
 
 
 const HomeSection1 = () => {
+
+  const Video = styled.video`
+  object-fit: cover;
+  width: 115%;
+  height: 115%;
+  aspect-ratio: 1 / 1;
+  `;
+
+
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
+
+  const handleVideoLoad = () => {
+    setVideoLoaded(true);
+  };
 
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -74,7 +90,18 @@ Tailored Bringing Solutions for Thailands Industries to Unleash Your Business Po
           </Column>
 
           <CircleBox classes={`w-[25rem] h-[25rem] lg:w-[25rem] lg:h-[25rem] pointer-events-none justify-self-center sm:justify-self-end ${imageLoaded ? "fade-in loaded" : "fade-in"}`}>
-            <Image
+          <Video
+              src="/test1.mp4" 
+              width={500}
+              height={500}
+              autoPlay
+              muted
+              loop
+              onLoadedData={handleVideoLoad}
+            />
+            
+          </CircleBox>
+          <Image
               src="/test1.gif"
               alt="profile"
               width={500}
@@ -91,7 +118,6 @@ Tailored Bringing Solutions for Thailands Industries to Unleash Your Business Po
               }}
               onLoad={handleImageLoad}
             />
-          </CircleBox>
         </WrappedBox>
       </ConstraintedBox>
     </ResponsiveBox>

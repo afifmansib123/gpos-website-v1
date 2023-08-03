@@ -53,7 +53,7 @@ const HomeSection3 = () => {
     <ResponsiveBox classNames="bg-[var(--dialogColor)]">
       <ConstraintedBox classNames="p-4 py-12">
         <h2 className="text-center mx-auto">
-          Key Features of<span className="text-[var(--primaryColor)] ml-2">GPOS</span>
+          GPOS is made<span className="text-[var(--primaryColor)] ml-2">using</span>
         </h2>
 
         <WrappedBox classes="justify-items-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mt-12">
@@ -82,16 +82,6 @@ const HomeSection3 = () => {
 
                 <h5 className="font-bold mt-4">{service.title}</h5>
 
-                <small className="mt-4 flex flex-row items-center">
-                  <span
-                    style={{
-                      marginRight: "0.25rem",
-                    }}
-                  >
-                    ⭐
-                  </span>
-                  {service.level}
-                </small>
               </Column>
             );
           })}

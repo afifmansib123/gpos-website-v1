@@ -9,7 +9,7 @@ const projects = [
     title: "ระบบออกแบบเมนู",
     description:
       "สร้างและแก้ไขเมนูด้วยรูปภาพ โดยขั้นตอนไม่ยุ่งยาก ช่วยให้การขายเป็นเรื่องง่าย",
-    icon: "/slide2.png",
+    icon: "/x1.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/social-media-app-flutter",
     url: "https://www.nixlab.co.in/projects/com.nixlab.rippl",
@@ -20,7 +20,7 @@ const projects = [
     title: "E-commerce App",
     description:
       "An e-commerce web application developed using React.js, Material UI, Redux, and Stripe.",
-    icon: "/logo/reactjs.webp",
+    icon: "/x2.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/ecommerce-web-reactjs",
     url: "https://nixlab-shop.cyclic.app",
@@ -31,7 +31,7 @@ const projects = [
     title: "Video Calling App",
     description:
       "A video calling mobile application developed using Flutter and Agora SDK that allows users to call each other face to face.",
-    icon: "/logo/flutter.webp",
+    icon: "/x3.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/video-calling-app-flutter",
     url: "https://www.nixlab.co.in/projects/livebox-app",
@@ -42,7 +42,7 @@ const projects = [
     title: "Social Media API",
     description:
       "An RESTful API developed using Node.js, Express.js and MongoDB to integrate backend and frontend with ease.",
-    icon: "/logo/nodejs.webp",
+    icon: "/x4.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/social-media-api-nodejs",
     repoType: "private",
@@ -52,7 +52,7 @@ const projects = [
     title: "Grocery List Maker App",
     description:
       "A grocery list maker mobile application developed using Flutter, BloC, Hive DB and PDF.",
-    icon: "/logo/flutter.webp",
+    icon: "/x5.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/grocery-list-maker-flutter",
     url: "https://github.com/nixrajput/grocery-list-maker-flutter/releases/latest",
@@ -63,7 +63,7 @@ const projects = [
     title: "E-commerce API",
     description:
       "An RESTful API developed using Node.js, Express.js, MongoDB, and Stripe to integrate e-commerce backend.",
-    icon: "/logo/nodejs.webp",
+    icon: "/x6.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/ecommerce-api-nodejs",
     repoType: "public",
@@ -76,7 +76,7 @@ const HomeSection4 = () => {
     <ResponsiveBox classNames="bg-[var(--bgColor)]">
       <ConstraintedBox classNames="p-4 py-20">
         <h2 className="text-center mx-auto">
-          Recent <span className="text-[var(--primaryColor)]">Projects</span>
+          GPOS <span className="text-[var(--primaryColor)]">Features</span>
         </h2>
 
         <Carousel classes="mt-12 w-full">
