@@ -61,26 +61,26 @@ const HomeSection6 = () => {
             </Column>
           </Column>
 
-          <CircleBox classes={`w-[20rem] h-[20rem] lg:w-[10rem] lg:h-[10rem]  pointer-events-none justify-self-center sm:justify-self-end ${imageLoaded ? "fade-in loaded" : "fade-in"}`} >
+         
             <Image
               src="/logo.png"
               alt="profile"
-              width={200}
-              height={200}
-              sizes="80%"
+              width={70}
+              height={70}
+              sizes="20%"
               priority
               placeholder="blur"
               blurDataURL="/images/profile.webp"
               style={{
                 objectFit: "cover",
-                width: "100%",
-                height: "100%",
+                width: "70%",
+                height: "70%",
                 aspectRatio: "1 / 1",
                 borderRadius: "80%"
               }}
               onLoad={handleImageLoad}
             />
-          </CircleBox>
+        
         </WrappedBox>
       </ConstraintedBox>
     </ResponsiveBox>
