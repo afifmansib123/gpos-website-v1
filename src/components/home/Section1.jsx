@@ -21,9 +21,10 @@ const HomeSection1 = () => {
 
   const Video = styled.video`
   object-fit: cover;
-  width: 115%;
-  height: 115%;
+  width: 100%;
+  height: 100%;
   aspect-ratio: 1 / 1;
+  
   `;
 
 
@@ -44,9 +45,12 @@ const HomeSection1 = () => {
 
 
   return (
+
     <ResponsiveBox classNames="bg-[var(--dialogColor)]">
-      <ConstraintedBox classNames="p-4 pb-16 pt-8 sm:pt-16">
+      <ConstraintedBox classNames="p-8 "> {/* pb-16 pt-8 sm:pt-16 */}
+     
         <WrappedBox classes="justify-items-stretch">
+          
           <Column classes="justify-center">
             <p className="max-w-sm">
               Welcome To 
@@ -90,19 +94,19 @@ Tailored Bringing Solutions for Thailands Industries to Unleash Your Business Po
               </Row>
             </Column>
           </Column>
-
-          <CircleBox classes={`w-[25rem] h-[25rem] lg:w-[25rem] lg:h-[25rem] pointer-events-none justify-self-center sm:justify-self-end`}>
+                
+          <CircleBox classes={`w-[20rem] h-[30rem] lg:w-[30rem] lg:h-[30rem] pointer-events-none justify-self-center sm:justify-self-end`}>
           <Video
               src="/video1.mp4" 
-              width={500}
-              height={500}
+              
               autoPlay
               muted
               loop
-              onLoadedData={handleVideoLoad}
+              style={{ position:"absolute", width: "100%", height: "100%", objectFit: "fill", transform: "scale(1)" }}
             />
             
           </CircleBox>
+         
           
           {/*
           <Image
@@ -124,6 +128,7 @@ Tailored Bringing Solutions for Thailands Industries to Unleash Your Business Po
             /> */}
         </WrappedBox>
       </ConstraintedBox>
+      
     </ResponsiveBox>
   );
 };
