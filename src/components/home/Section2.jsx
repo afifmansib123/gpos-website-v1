@@ -8,7 +8,7 @@ const projects = [
   {
     title: "ระบบออกแบบเมนู",
     description:
-      "สร้างและแก้ไขเมนูด้วยรูปภาพ โดยขั้นตอนไม่ยุ่งยาก ช่วยให้การขายเป็นเรื่องง่าย",
+      "",
     icon: "/x1.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/social-media-app-flutter",
@@ -17,9 +17,9 @@ const projects = [
     tags: ["Flutter", "Dart", "GetX", "Hive"],
   },
   {
-    title: "E-commerce App",
+    title: "ระบบจัดการโต๊ะ",
     description:
-      "An e-commerce web application developed using React.js, Material UI, Redux, and Stripe.",
+      "",
     icon: "/x2.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/ecommerce-web-reactjs",
@@ -28,9 +28,9 @@ const projects = [
     tags: ["React.js", "Redux", "Material UI", "Stripe"],
   },
   {
-    title: "Video Calling App",
+    title: "ระบบจัดการออเดอร์",
     description:
-      "A video calling mobile application developed using Flutter and Agora SDK that allows users to call each other face to face.",
+      "",
     icon: "/x3.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/video-calling-app-flutter",
@@ -39,9 +39,9 @@ const projects = [
     tags: ["Flutter", "Dart", "GetX", "Agora SDK"],
   },
   {
-    title: "Social Media API",
+    title: "ระบบชำระเงิน",
     description:
-      "An RESTful API developed using Node.js, Express.js and MongoDB to integrate backend and frontend with ease.",
+      "",
     icon: "/x4.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/social-media-api-nodejs",
@@ -49,9 +49,9 @@ const projects = [
     tags: ["Node.js", "Express.js", "MongoDB", "WebSocket"],
   },
   {
-    title: "Grocery List Maker App",
+    title: "ระบบสร้าง QR Menu",
     description:
-      "A grocery list maker mobile application developed using Flutter, BloC, Hive DB and PDF.",
+      "",
     icon: "/x5.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/grocery-list-maker-flutter",
@@ -60,9 +60,9 @@ const projects = [
     tags: ["Flutter", "Dart", "BLoC", "PDF", "Hive"],
   },
   {
-    title: "E-commerce API",
+    title: "ระบบรายงานการขาย",
     description:
-      "An RESTful API developed using Node.js, Express.js, MongoDB, and Stripe to integrate e-commerce backend.",
+      "",
     icon: "/x6.png",
     sceenshots: [],
     githubUrl: "https://github.com/nixrajput/ecommerce-api-nodejs",

@@ -34,11 +34,13 @@ const HomeSection1 = () => {
     setVideoLoaded(true);
   };
 
+  {/* 
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const handleImageLoad = () => {
     setImageLoaded(true);
   };
+  */}
 
 
   return (
@@ -89,9 +91,9 @@ Tailored Bringing Solutions for Thailands Industries to Unleash Your Business Po
             </Column>
           </Column>
 
-          <CircleBox classes={`w-[25rem] h-[25rem] lg:w-[25rem] lg:h-[25rem] pointer-events-none justify-self-center sm:justify-self-end ${imageLoaded ? "fade-in loaded" : "fade-in"}`}>
+          <CircleBox classes={`w-[25rem] h-[25rem] lg:w-[25rem] lg:h-[25rem] pointer-events-none justify-self-center sm:justify-self-end`}>
           <Video
-              src="/test1.mp4" 
+              src="/video1.mp4" 
               width={500}
               height={500}
               autoPlay
@@ -101,6 +103,8 @@ Tailored Bringing Solutions for Thailands Industries to Unleash Your Business Po
             />
             
           </CircleBox>
+          
+          {/*
           <Image
               src="/test1.gif"
               alt="profile"
@@ -117,7 +121,7 @@ Tailored Bringing Solutions for Thailands Industries to Unleash Your Business Po
                 aspectRatio: "1 / 1",
               }}
               onLoad={handleImageLoad}
-            />
+            /> */}
         </WrappedBox>
       </ConstraintedBox>
     </ResponsiveBox>

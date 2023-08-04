@@ -14,7 +14,7 @@ export default function Home() {
     <PageBox>
       <HomeSection1 />
       <HomeSection2 />
-      <HomeSection3 />
+      {/*<HomeSection3 />*/}
       <HomeSection4 />
       {/* <HomeSection5 /> */}
       <HomeSection6/>
