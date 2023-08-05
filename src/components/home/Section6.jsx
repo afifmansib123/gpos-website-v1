@@ -27,9 +27,9 @@ const HomeSection6 = () => {
 
   return (
     <ResponsiveBox classNames="bg-[var(--dialogColor)]">
-      <ConstraintedBox classNames="p-4 pb-16 pt-8 sm:pt-16">
+      <ConstraintedBox classNames="p-4 pb-16 pt-8 sm:pt-10">
         <WrappedBox classes="justify-items-stretch">
-          <Column classes="justify-center">
+          <Column classes="justify-center mr-10">
             <p className="max-w-sm">
               Thank You For Choosing 
               <span className="text-[var(--primaryColor)] ml-1">GPOS</span>
@@ -65,19 +65,20 @@ const HomeSection6 = () => {
             <Image
               src="/logo.png"
               alt="profile"
-              width={70}
-              height={70}
+              width={30}
+              height={30}
               sizes="20%"
               priority
               placeholder="blur"
               blurDataURL="/images/profile.webp"
               style={{
                 objectFit: "cover",
-                width: "70%",
-                height: "70%",
+                width: "40%",
+                height: "40%",
                 aspectRatio: "1 / 1",
-                borderRadius: "80%"
+                borderRadius: "50%"
               }}
+              className="flex mt-20 ml-64"
               onLoad={handleImageLoad}
             />
         

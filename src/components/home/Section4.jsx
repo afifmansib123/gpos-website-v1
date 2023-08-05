@@ -41,14 +41,14 @@ const HomeSection2 = () => {
         <p style={{fontSize:28}}>ใช้ง่ายปลอดภัย</p><span className="ml-2 text-[var(--primaryColor)]">จัดการได้เร็วกว่าเดิม</span>
         </h2>
 
-        <WrappedBox classes="justify-items-center sm:grid-cols-4 mt-12">
+        <WrappedBox classes="justify-items-center sm:grid-cols-4 mt-12" >
           {services.map((service, index) => {
             return (
-              <Column
+              <Column 
                 key={`service-${index}`}
-                classes="bg-[var(--dialogColor1)] p-4 items-center text-center"
-              >
-                <Image
+                classes="bg-[var(--dialogColor1)] p-4 justify-center items-center text-center"
+              > <div style={{border:"1px solid orange",padding:"10px", borderRadius: "10px"}}> 
+                <Image className="flex ml-16"
                   src={service.image}
                   alt={`service-${index}`}
                   width={100}
@@ -62,12 +62,14 @@ const HomeSection2 = () => {
                     width: "5rem",
                     height: "5rem",
                     aspectRatio: "1 / 1",
-                  }}
+                    
+                  }} 
                 />
 
                 <h5 className="font-bold mt-4">{service.title}</h5>
 
                 <p className="mt-8">{service.description}</p>
+                </div>
               </Column>
             );
           })}

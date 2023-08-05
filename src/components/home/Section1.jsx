@@ -52,7 +52,7 @@ const HomeSection1 = () => {
         <WrappedBox classes="justify-items-stretch">
           
           <Column classes="justify-center">
-            <p className="max-w-sm">
+            <p className="max-w-sm"  >
               Welcome To 
               <span className="text-[var(--primaryColor)] ml-1">GPOS</span>
             </p>
@@ -64,7 +64,7 @@ const HomeSection1 = () => {
             </p>
 
             <p className="flex justify-center mt-8 ">
-            Empowering Business Success with GPOS Your Ultimate Point of Sale .
+            Empowering Business Success with GPOS Your Ultimate Point of Sale 
 Tailored Bringing Solutions for Thailands Industries to Unleash Your Business Potential.
             </p>
 
@@ -97,7 +97,7 @@ Tailored Bringing Solutions for Thailands Industries to Unleash Your Business Po
                 
           <CircleBox classes={`w-[20rem] h-[30rem] lg:w-[30rem] lg:h-[30rem] pointer-events-none justify-self-center sm:justify-self-end`}>
           <Video
-              src="/video1.mp4" 
+              src="/new.mp4" 
               
               autoPlay
               muted

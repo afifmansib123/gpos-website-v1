@@ -79,7 +79,7 @@ const NavBar = () => {
   return (
     <nav
       className="fixed w-screen h-auto z-[1000] top-0"
-      ref={navRef} style={{backgroundColor:"#262627"}}
+      ref={navRef} style={{backgroundColor:"#ECC666"}}
     >
       <div className="h-full flex mx-auto px-1 py-6 constrained-width">
         <div className="w-full flex justify-between items-center">

@@ -9,9 +9,9 @@
   --borderRadius: 0.5rem;
 
   --dialogColor: rgb(255, 255, 255);   //main dialog color
-  --dialogColor1: rgb(188, 187, 187); 
+  --dialogColor1: rgb(236, 235, 234); 
   --bgColor: rgb(240, 240, 240);
-  --lightGrayColor: #000000;
+  --lightGrayColor: #8c3737;
   --lighterGrayColor: #000000;
 
   --borderColor: rgba(220, 220, 220, 1);
@@ -128,7 +128,7 @@
 
 html,
 body {
-  max-width: 200vw;
+  max-width: 100vw;
   overflow-x: hidden;
 }
 

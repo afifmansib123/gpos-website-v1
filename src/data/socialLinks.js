@@ -4,23 +4,23 @@ const socialLinks = [
 
   {
     name: "Instagram",
-    url: "#",
+    url: "https://www.instagram.com/sunmithofficial/?hl=en",
     icon: <FaInstagram />,
   },
 
   {
     name: "Facebook",
-    url: "#",
+    url: "https://www.facebook.com/GposTH",
     icon: <FaFacebook />,
   },
   {
     name: "Line",
-    url: "#",
+    url: "https://line.me/R/ti/p/@420jymzj?oat_content=url",
     icon: <FaLine />,
   },
   {
     name: "YouTube",
-    url: "#",
+    url: "https://www.youtube.com/@SunmiTHoffical",
     icon: <FaYoutube />,
   },
 ];

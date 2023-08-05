@@ -5,7 +5,7 @@ const CircleBox = (props) => {
 
   return (
     <div
-      className={`relative max-w-[45rem] min-w-[36rem] max-h-[100rem] min-h-[40rem] bg-[var(--primaryColor)] overflow-hidden  aspect-square transition duration-200 ease-in-out ${classes}`}
+      className={`relative max-w-[40rem] min-w-[35rem] max-h-[80rem] min-h-[38rem] bg-[var(--primaryColor)] overflow-hidden  aspect-square transition duration-200 ease-in-out ${classes}`}
     >
       {children}
     </div>
