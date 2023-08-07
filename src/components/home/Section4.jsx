@@ -36,8 +36,8 @@ const services = [
 const HomeSection2 = () => {
   return (
     <ResponsiveBox classNames="bg-[var(--bgColor)]">
-      <ConstraintedBox classNames="p-4 py-16">
-        <h2 className="text-center mx-auto" style={{fontWeight:"lighter"}}>
+      <ConstraintedBox classNames="p-4 py-16 flex justify-center items-center text-center">
+        <h2 className="" style={{fontWeight:"lighter"}}>
         <p style={{fontSize:28}}>ใช้ง่ายปลอดภัย</p><span className="ml-2 text-[var(--primaryColor)]">จัดการได้เร็วกว่าเดิม</span>
         </h2>
 
@@ -46,9 +46,9 @@ const HomeSection2 = () => {
             return (
               <Column 
                 key={`service-${index}`}
-                classes="bg-[var(--dialogColor1)] p-4 justify-center items-center text-center"
-              > <div style={{border:"1px solid orange",padding:"10px", borderRadius: "10px"}}> 
-                <Image className="flex ml-16"
+                classes="bg-[var(--dialogColor1)] p-4 "
+              > <div style={{border:"3px solid orange",padding:"10px", borderRadius: "10px"}}> 
+                <Image className="flex justify-center items-center p-4 ml-16"
                   src={service.image}
                   alt={`service-${index}`}
                   width={100}
@@ -57,13 +57,7 @@ const HomeSection2 = () => {
                   priority
                   placeholder="blur"
                   blurDataURL={service.image}
-                  style={{
-                    objectFit: "cover",
-                    width: "5rem",
-                    height: "5rem",
-                    aspectRatio: "1 / 1",
-                    
-                  }} 
+                
                 />
 
                 <h5 className="font-bold mt-4">{service.title}</h5>
