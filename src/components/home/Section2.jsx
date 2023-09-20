@@ -24,11 +24,11 @@ const HomeSection5 = () => {
 
   return (
     
-    <div className="flex justify-center items-center p-4 py-16 mt-5">
+    <div className="flex justify-center items-center mt-5">
       <Image
         src="/Gposnew.png"
         alt="profile"
-        width={1400}
+        width={2000}
         height={700}
         sizes="100%"
         priority
