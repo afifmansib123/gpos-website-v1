@@ -12,124 +12,41 @@ import socialLinks from "@/data/socialLinks";
 import { useState } from "react";
 import styled from "styled-components";
 
-
-
-
-
-
 const HomeSection1 = () => {
-
-  const Video = styled.video`
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1 / 1;
-  
-  `;
-
-
-  const [videoLoaded, setVideoLoaded] = useState(false);
-
-
-  const handleVideoLoad = () => {
-    setVideoLoaded(true);
-  };
-
-  {/* 
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
-  */}
-
+  const pics = [
+    "/newPics/pic1.png",
+    "/newPics/pic2.png",
+    "/newPics/pic3.png",
+    "/newPics/pic4.png",
+    "/newPics/pic5.png",
+    "/newPics/pic6.png",
+    "/newPics/pic7.png",
+    "/newPics/pic8.png",
+    "/newPics/pic9.png",
+    "/newPics/pic10.png",
+    "/newPics/pic11.png",
+    "/newPics/pic12.png",
+    "/newPics/pic13.png",
+    "/newPics/pic14.png",
+  ];
 
   return (
-
-    <ResponsiveBox classNames="bg-[var(--dialogColor)]">
-      <ConstraintedBox classNames="p-8 "> {/* pb-16 pt-8 sm:pt-16 */}
-     
-        <WrappedBox classes="justify-items-stretch">
-          
-          <Column classes="justify-center">
-            <p className="max-w-sm"  >
-              Welcome To 
-              <span className="text-[var(--primaryColor)] ml-1">GPOS</span>
-            </p>
-
-            <h1 className="text-[var(--primaryColor)]">GPOS</h1>
-
-            <p className="font-semibold max-w-sm">
-              Thailands No1 POS System 
-            </p>
-
-            <p className="flex justify-center mt-8 ">
-            Empowering Business Success with GPOS Your Ultimate Point of Sale 
-Tailored Bringing Solutions for Thailands Industries to Unleash Your Business Potential.
-            </p>
-
-            <button
-              name="talk-btn"
-              type="button"
-              className="app__filled_btn mt-10"
-            >
-              Lets Use
-            </button>
-
-            <Column classes="mt-8">
-              <p>Contact Us</p>
-              <Row classes="mt-2">
-                {socialLinks.map((link, index) => {
-                  return (
-                    <Link
-                      key={`social-link-${index}`}
-                      href={link.url}
-                      target="_blank"
-                      className="text-white bg-[var(--primaryColor)] p-2 rounded-full flex items-center justify-center mr-2 last:mr-0 hover:bg-[var(--primaryColor50)] transition duration-300 ease-in-out"
-                    >
-                      {link.icon}
-                    </Link>
-                  );
-                })}
-              </Row>
-            </Column>
-          </Column>
-                
-          <CircleBox classes={`w-[20rem] h-[30rem] lg:w-[30rem] lg:h-[30rem] pointer-events-none justify-self-center sm:justify-self-end`}>
-          <Video
-              src="/new.mp4" 
-              
-              autoPlay
-              muted
-              loop
-              style={{ position:"absolute", width: "100%", height: "100%", objectFit: "fill", transform: "scale(1)" }}
-            />
-            
-          </CircleBox>
-         
-          
-          {/*
+    <div>
+      {pics.map((pic) => (
+        <div className="flex justify-center items-center mt-5">
           <Image
-              src="/test1.gif"
-              alt="profile"
-              width={500}
-              height={500}
-              sizes="100%"
-              priority
-              placeholder="blur"
-              blurDataURL="/images/profile.webp"
-              style={{
-                objectFit: "cover",
-                width: "115%",
-                height: "115%",
-                aspectRatio: "1 / 1",
-              }}
-              onLoad={handleImageLoad}
-            /> */}
-        </WrappedBox>
-      </ConstraintedBox>
-      
-    </ResponsiveBox>
+            src={pic}
+            alt="profile"
+            width={2000}
+            height={700}
+            sizes="100%"
+            priority
+            placeholder="blur"
+            blurDataURL="/images/Gposnew.png"
+          />
+        </div>
+      ))}
+    </div>
   );
 };
 
