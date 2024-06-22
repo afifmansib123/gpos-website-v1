@@ -32,8 +32,8 @@ const HomeSection1 = () => {
 
   return (
     <div>
-      {pics.map((pic) => (
-        <div className="flex justify-center items-center mt-5">
+      {pics.map((pic , index) => (
+        <div key={index} className="flex justify-center items-center mt-5">
           <Image
             src={pic}
             alt="profile"
